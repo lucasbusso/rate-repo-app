@@ -23,5 +23,6 @@ module.exports = {
     'space-before-function-paren': 'off',
     'no-unused-vars': 'warn',
     'react/prop-types': 'off',
+    'object-shorthand': 'off',
   },
 }
