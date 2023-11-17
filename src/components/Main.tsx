@@ -1,12 +1,12 @@
-import { View, SafeAreaView } from 'react-native'
+import { View } from 'react-native'
+import AppBar from './AppBar'
 import RepositoryList from './RepositoryList'
 
 export default function Main() {
   return (
-    <SafeAreaView style={{ marginTop: 40, flexGrow: 1 }}>
-      <View>
-        <RepositoryList />
-      </View>
-    </SafeAreaView>
+    <View>
+      <AppBar />
+      <RepositoryList />
+    </View>
   )
 }

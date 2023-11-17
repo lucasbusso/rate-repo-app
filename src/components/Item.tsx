@@ -1,5 +1,6 @@
-import { View, StyleSheet } from 'react-native'
-import StyledText from './StyledText'
+import { StyleSheet, View } from 'react-native'
+import Card from './Card'
+import Stats from './Stats'
 
 interface Person {
   name: string
@@ -7,17 +8,29 @@ interface Person {
   email: string
   postalZip: string
   country: string
+  language: string
+  stars: string
+  reviews: string
+  rating: string
+  forks: string
+  avatar: string
 }
 
 export default function Item(props: Person) {
   return (
     <View key={props.name} style={styles.container}>
-      <StyledText bold blue big>
-        {props.name}
-      </StyledText>
-      <StyledText>{props.country}</StyledText>
-      <StyledText>{props.phone}</StyledText>
-      <StyledText>{props.postalZip}</StyledText>
+      <Card
+        avatar={props.avatar}
+        name={props.name}
+        language={props.language}
+        country={props.country}
+      />
+      <Stats
+        stars={props.stars}
+        reviews={props.reviews}
+        rating={props.rating}
+        forks={props.forks}
+      />
     </View>
   )
 }
