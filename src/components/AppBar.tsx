@@ -1,16 +1,9 @@
 import Constants from 'expo-constants'
 import { StyleSheet, View } from 'react-native'
 import { theme } from '../globals/theme'
-import StyledText from './StyledText'
 
 export default function AppBar() {
-  return (
-    <View style={styles.appBar}>
-      <StyledText style={styles.text} fontWeight='700'>
-        app bar
-      </StyledText>
-    </View>
-  )
+  return <View style={styles.appBar}></View>
 }
 
 const styles = StyleSheet.create({

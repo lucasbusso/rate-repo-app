@@ -5,7 +5,7 @@ import RepositoryList from './RepositoryList'
 export default function Main() {
   return (
     <View>
-      <AppBar />
+      {/* <AppBar /> */}
       <RepositoryList />
     </View>
   )
